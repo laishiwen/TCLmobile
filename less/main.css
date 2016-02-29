@@ -1,3 +1,15 @@
+.color_666 {
+  color: #666666;
+}
+.color_333 {
+  color: #333333;
+}
+.color_999 {
+  color: #999999;
+}
+body {
+  font: 12px "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+}
 * {
   padding: 0;
   margin: 0;
@@ -12,6 +24,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 html {
   font-size: 40px;
@@ -166,6 +179,48 @@ a:hover {
 .bor-left {
   border-left: 1px solid #e5e5e5;
 }
+.fs16 {
+  font-size: 0.4rem;
+}
+.fs18 {
+  font-size: 0.45rem;
+}
+.fs20 {
+  font-size: 0.5rem;
+}
+.fs22 {
+  font-size: 0.55rem;
+}
+.fs24 {
+  font-size: 0.6rem;
+}
+.fs26 {
+  font-size: 0.65rem;
+}
+.fs28 {
+  font-size: 0.7rem;
+}
+.fs30 {
+  font-size: 0.75rem;
+}
+.fs32 {
+  font-size: 0.8rem;
+}
+.fs34 {
+  font-size: 0.85rem;
+}
+.fs36 {
+  font-size: 0.9rem;
+}
+.fs42 {
+  font-size: 1.05rem;
+}
+.fs48 {
+  font-size: 1.2rem;
+}
+.fs60 {
+  font-size: 1.5rem;
+}
 .cc {
   display: table;
   content: "";
@@ -215,6 +270,18 @@ nav,
 section {
   margin: 0;
   padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.mg_top28 {
+  margin-top: 0.7rem;
+}
+.mrg20 {
+  margin: 0.5rem 0;
+}
+.mrg40 {
+  margin: 1rem 0;
 }
 .inputsearch {
   float: left;
@@ -2361,13 +2428,6 @@ section {
   padding-bottom: 0.8rem;
   margin: auto;
 }
-.m-server .hint {
-  width: 14.75rem;
-  line-height: 2.5rem;
-  font-size: 0.8rem;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
 .m-server .tools {
   width: 14.75rem;
   overflow: hidden;
@@ -2417,7 +2477,7 @@ section {
   height: 1.75rem;
 }
 .m-server dl dd {
-  width: 12.5rem;
+  width: 12.25rem;
   height: 2.25rem;
   display: inline-block;
   float: left;
@@ -2437,6 +2497,18 @@ section {
   color: #666666;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.hint {
+  margin-top: 0.5rem;
+  width: 14.75rem;
+  line-height: 2rem;
+  height: 2rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 700;
+  box-sizing: border-box;
+  color: #333333;
 }
 /* T-17  服务 2*/
 .list_view {
@@ -2462,6 +2534,7 @@ section {
   width: 100%;
   height: 5.3rem;
   text-align: center;
+  text-decoration: none;
 }
 .list_view ul li a img {
   width: 1.6rem;
@@ -2475,4 +2548,1013 @@ section {
 .list_view li:nth-child(3n+2) {
   border-left: 0.05rem #cccccc solid;
   border-right: 0.05rem #cccccc solid;
+}
+/*T-17-4电子表单.html*/
+.atform {
+  width: 14.75rem;
+  margin: auto;
+  overflow: hidden;
+  padding-bottom: 15rem;
+}
+.atform .cont {
+  font-size: 0.75rem;
+  color: #999999;
+  padding-top: 0.75rem;
+}
+.atform .iphone {
+  padding-top: 0.5rem;
+  overflow: hidden;
+}
+.atform .iphone span {
+  font-size: 0.75rem;
+  width: 4.5rem;
+  height: 2.25rem;
+  text-align: center;
+  line-height: 2.25rem;
+  display: inline-block;
+  float: left;
+  letter-spacing: 0.05rem;
+  color: #999999;
+}
+.atform .iphone input {
+  width: 10rem;
+  height: 2.25rem;
+  display: inline-block;
+  text-indent: 0.1rem;
+  float: left;
+  color: #CCCCCC;
+  font-size: 0.7rem;
+  letter-spacing: 0.05rem;
+}
+.atform .tel_btn {
+  width: 14.75rem;
+  padding-top: 1.75rem;
+}
+.atform .tel_btn a {
+  height: 2.25rem;
+  width: 6.1rem;
+  border-radius: 0.15rem;
+  text-align: center;
+  line-height: 2.25rem;
+  color: #FFFFFF;
+  background-color: #CCCCCC;
+  font-size: 0.75rem;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+}
+.atform .tel_btn .activate {
+  float: left;
+}
+.atform .tel_btn .reset {
+  float: right;
+}
+.atform .tel_btn .active {
+  background-color: #f27f88;
+  color: #FFFFFF;
+}
+/*T-11-10追加评论*/
+.commentw_view {
+  width: 14.75rem;
+  margin: auto;
+  overflow: hidden;
+}
+.commentw_view .prd_list {
+  width: 14.75rem;
+  overflow: hidden;
+}
+.commentw_view .prd_list dt {
+  width: 3.25rem;
+  height: 3rem;
+  display: inline-block;
+  float: left;
+  background: url("../img/comment/tv.png") no-repeat;
+  background-position: 0 50%;
+  background-size: 2.55rem 2.55rem;
+  background-origin: border-box;
+}
+.commentw_view .prd_list dd {
+  width: 11.25rem;
+  height: 3rem;
+  padding-top: 0.1rem;
+  display: inline-block;
+  float: left;
+}
+.commentw_view .prd_list dd p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  letter-spacing: 0.05rem;
+  margin-top: 0.1rem;
+}
+.commentw_view .cmw_cont {
+  width: 14.75rem;
+  height: 3rem;
+  overflow: hidden;
+  color: #333333;
+  text-align: justify;
+  padding: 0.25rem 0;
+}
+.commentw_view .cmw_img {
+  width: 14.75rem;
+}
+.commentw_view .cmw_img ul {
+  width: 14.75rem;
+}
+.commentw_view .cmw_img ul li {
+  width: 2.55rem;
+  height: 2.55rem;
+  display: inline-block;
+  position: relative;
+  margin-right: 0.65rem;
+}
+.commentw_view .cmw_img ul li img {
+  width: 2.55rem;
+  height: 2.55rem;
+  right: 0;
+}
+.commentw_view .cmw_img ul li p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #000000;
+  color: #FFFFFF;
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  -webkit-opacity: 0.6;
+  opacity: 0.6;
+  width: 2.55rem;
+  height: 0.5rem;
+  overflow: hidden;
+  text-align: center;
+}
+.commentw_view .cmw_img ul .mg_rg {
+  margin-right: 0 !important;
+  background-position: 0 0;
+}
+.commentw_view .cmw_img .cmw_gr {
+  width: 14.75rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 0.5rem;
+  color: #CCCCCC;
+  float: left;
+}
+.commentw_view .megs {
+  width: 14.75rem;
+  padding: 0.5rem 0;
+}
+.commentw_view .megs textarea {
+  color: #999999;
+  width: 14.75rem;
+  height: 6rem;
+  font-size: 0.65rem;
+}
+.commentw_view .megs p {
+  width: 14.75rem;
+  height: 2.5rem;
+  position: relative;
+}
+.commentw_view .megs p a {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 0;
+  border: 0.05rem #cccccc solid;
+  border-radius: 0.05rem;
+  text-align: center;
+}
+.commentw_view .megs p a img {
+  margin-top: 0.5rem;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.commentw_view .bis_cmt {
+  width: 14.75rem;
+  padding-bottom: 0.75rem;
+}
+.commentw_view .bis_cmt p {
+  width: 14.75rem;
+  line-height: 1.75rem;
+  font-size: 0.5rem;
+}
+.commentw_view .bis_cmt ul {
+  display: block;
+  width: 11rem;
+  height: 0.95rem;
+  float: left;
+}
+.commentw_view .bis_cmt ul li {
+  display: inline-block;
+  float: left;
+  margin-right: 1.25rem;
+}
+.commentw_view .bis_cmt ul li img {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+.commentw_view .bis_cmt span {
+  display: block;
+  width: 3.5rem;
+  height: 0.95rem;
+  line-height: 0.95rem;
+  text-align: center;
+  color: #f5c609;
+  float: left;
+  font-size: 0.65rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+.sub_cmw {
+  width: 16rem;
+  padding: 0.6rem 0;
+}
+.sub_cmw a {
+  text-decoration: none;
+  display: block;
+  width: 14.75rem;
+  height: 1.9rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  line-height: 1.9rem;
+  background-color: #f27f88;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  margin: auto;
+}
+/*T-11-11我的评价*/
+.slt_view {
+  width: 16rem;
+  overflow: hidden;
+  padding-bottom: 0.5rem;
+}
+.slt_view .hint {
+  width: 14.75rem;
+  margin: auto;
+  overflow: hidden;
+}
+.slt_view .record {
+  display: block;
+  width: 14.75rem;
+  margin: auto;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+.slt_view .record li {
+  float: left;
+  display: inline-block;
+  width: 33.3%;
+  line-height: 2rem;
+  height: 2rem;
+  font-size: 0.65rem;
+  text-align: center;
+}
+.slt_view .record .re_active {
+  color: #F00;
+  border-bottom: 0.05rem #ff0000 solid;
+}
+.slt_view .user_view {
+  width: 16rem;
+  overflow: hidden;
+}
+.slt_view .user_view .user_list {
+  width: 14.75rem;
+  margin: auto;
+  overflow: hidden;
+}
+.slt_view .user_view .user_list .myleave {
+  width: 14.75rem;
+  margin: auto;
+  overflow: hidden;
+}
+.slt_view .user_view .user_list .myleave .prd_list {
+  width: 14.75rem;
+  overflow: hidden;
+}
+.slt_view .user_view .user_list .myleave .prd_list dt {
+  width: 3.25rem;
+  height: 3rem;
+  display: inline-block;
+  float: left;
+  background: url("../img/comment/tv_bg.png") no-repeat;
+  background-position: 0 50%;
+  background-size: 2.55rem 2.55rem;
+  background-origin: border-box;
+}
+.slt_view .user_view .user_list .myleave .prd_list dd {
+  width: 11.25rem;
+  height: 3rem;
+  padding-top: 0.25rem;
+  display: inline-block;
+  float: left;
+}
+.slt_view .user_view .user_list .myleave .prd_list dd p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  letter-spacing: 0.05rem;
+  position: relative;
+  margin-top: 0.05rem;
+}
+.slt_view .user_view .user_list .myleave .prd_list dd p span {
+  color: #CCCCCC;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 0.4rem !important;
+}
+.slt_view .user_view .user_list .myleave .cmw_cont {
+  width: 14.75rem;
+  overflow: hidden;
+  color: #333333;
+  text-align: justify;
+  padding: 0.25rem 0;
+}
+.slt_view .user_view .user_list .myleave .hty_day {
+  width: 14.75rem;
+  color: #999999;
+  font-size: 0.45rem;
+}
+.slt_view .user_view .user_list .myleave .cmw_img {
+  width: 14.75rem;
+}
+.slt_view .user_view .user_list .myleave .cmw_img ul {
+  width: 14.75rem;
+}
+.slt_view .user_view .user_list .myleave .cmw_img ul li {
+  width: 2.55rem;
+  height: 2.55rem;
+  display: inline-block;
+  position: relative;
+  margin-right: 0.65rem;
+}
+.slt_view .user_view .user_list .myleave .cmw_img ul li img {
+  width: 2.55rem;
+  height: 2.55rem;
+  right: 0;
+}
+.slt_view .user_view .user_list .myleave .cmw_img ul li p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #000000;
+  color: #FFFFFF;
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  -webkit-opacity: 0.6;
+  opacity: 0.6;
+  width: 2.55rem;
+  height: 0.5rem;
+  overflow: hidden;
+  text-align: center;
+}
+.slt_view .user_view .user_list .myleave .cmw_img ul .mg_rg {
+  margin-right: 0 !important;
+  background-position: 0 0;
+}
+.slt_view .user_view .user_list .myleave .cmw_img .cmw_gr {
+  width: 14.75rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 0.5rem;
+  color: #CCCCCC;
+  float: left;
+}
+.slt_view .user_view .user_list .myleave .cmw_img .operation {
+  float: left;
+  width: 14.75rem;
+  padding: 0.6rem 0;
+  line-height: 1.25rem;
+}
+.slt_view .user_view .user_list .myleave .cmw_img .operation a {
+  width: 3.75rem;
+  height: 1.25rem;
+  float: right;
+  margin-left: 0.4rem;
+  display: inline-block;
+  border: 0.05rem #cccccc solid;
+  border-radius: 0.1rem;
+  text-align: center;
+  text-decoration: none;
+}
+/*T-05购物节*/
+.shopping_view {
+  width: 16rem;
+  padding-bottom: 0.6rem;
+}
+.shopping_view .Cart01 {
+  width: 14.75rem;
+  margin: auto;
+  overflow: hidden;
+}
+.shopping_view .Cart01 .prd_list {
+  width: 14.75rem;
+  overflow: hidden;
+}
+.shopping_view .Cart01 .prd_list dt {
+  width: 5rem;
+  height: 4.75rem;
+  display: inline-block;
+  background: url("../img/TV-max.png") no-repeat;
+  background-size: 4.5rem auto;
+  background-origin: border-box;
+  background-position: left;
+  float: left;
+}
+.shopping_view .Cart01 .prd_list dd {
+  position: relative;
+  width: 9.7rem;
+  height: 4.75rem;
+  display: inline-block;
+  float: right;
+}
+.shopping_view .Cart01 .prd_list dd p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  letter-spacing: 0.05rem;
+  margin-top: 0.1rem;
+}
+.shopping_view .Cart01 .prd_list dd .cont_sum {
+  width: 4.5rem;
+  height: 1.25rem;
+  border: 0.05rem #cccccc solid;
+  border-radius: 0.1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+.shopping_view .Cart01 .prd_list dd .cont_sum a {
+  width: 1rem;
+  display: inline-block;
+  height: 1.2rem;
+  float: left;
+  text-align: center;
+  line-height: 1.2rem;
+  color: black;
+  text-decoration: none;
+}
+.shopping_view .Cart01 .prd_list dd .cont_sum input[type="text"] {
+  display: inline-block;
+  float: left;
+  width: 2.4rem;
+  height: 1.2rem;
+  border: 0;
+  text-align: center;
+  letter-spacing: 0.05rem;
+}
+.shopping_view .Cart01 .prd_list dd .recycle {
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: url("../img/recycle.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.shopping_view .trade_view {
+  padding-top: 0.5rem;
+  width: 16rem;
+  overflow: hidden;
+}
+.shopping_view .trade_view .triangle {
+  width: 14.75rem;
+  margin: auto;
+  overflow: hidden;
+}
+.shopping_view .trade_view .triangle ul {
+  float: left;
+}
+.shopping_view .trade_view .triangle ul li {
+  display: inline-block;
+  float: left;
+  margin: 0 0.3rem;
+  width: 0;
+  height: 0;
+  border-left: 0.25rem solid transparent;
+  border-right: 0.25rem solid transparent;
+  border-bottom: 0.25rem solid #f8f8f9;
+}
+.shopping_view .trade_view .consume_slt {
+  width: 16rem;
+  overflow: hidden;
+  background-color: #f8f8f9 ;
+}
+.shopping_view .trade_view .consume_slt ul {
+  width: 14.75rem;
+  margin: auto;
+  overflow: hidden;
+  display: block;
+}
+.shopping_view .trade_view .consume_slt ul li {
+  width: 14.75rem;
+  height: 3.25rem;
+  padding: 0.6rem 0;
+  display: inline-block;
+  color: #333333;
+}
+.shopping_view .trade_view .consume_slt ul li img {
+  display: inline-block;
+  width: 2.05rem;
+  height: 2.05rem;
+  float: left;
+}
+.shopping_view .trade_view .consume_slt ul li p {
+  display: inline-block;
+  float: left;
+  margin: 0 0.5rem;
+  width: 10rem;
+  height: 2.05rem;
+  line-height: 2.05rem;
+  position: relative;
+  font-size: 0.6rem;
+}
+.shopping_view .trade_view .consume_slt ul li p span {
+  position: absolute;
+  left: 0;
+}
+.shopping_view .trade_view .consume_slt ul li p i {
+  position: absolute;
+  font-style: normal;
+  right: 0;
+}
+.shopping_view .trade_view .consume_slt ul li a {
+  width: 1.7rem;
+  height: 2.05rem;
+  display: inline-block;
+  float: left;
+  background: url("../img/recycle.png") no-repeat;
+  background-origin: border-box;
+  background-size: 1.1rem auto;
+  background-position: right;
+}
+.shopping_view .trade_view .add_product {
+  width: 14.75rem;
+  margin: auto;
+  overflow: hidden;
+  padding: 0.75rem 0;
+}
+.shopping_view .addpdt_list {
+  width: 14.75rem;
+  display: block;
+}
+.shopping_view .addpdt_list li {
+  width: 14.75rem;
+  height: 1rem;
+  display: inline-block;
+}
+.shopping_view .addpdt_list li a {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.1rem;
+  display: inline-block;
+  float: left;
+  background-color: #666666;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.shopping_view .addpdt_list li p {
+  margin-left: 1.25rem;
+  width: 11.75rem;
+  height: 1rem;
+  line-height: 1rem;
+  float: left;
+  font-size: 0.6rem;
+  position: relative;
+  color: #333333;
+}
+.shopping_view .addpdt_list li p span {
+  position: absolute;
+  left: 0;
+}
+.shopping_view .addpdt_list li p i {
+  position: absolute;
+  font-style: normal;
+  right: 0;
+}
+.shopping_view .subjoin {
+  width: 16rem;
+}
+.shopping_view .subjoin ul {
+  width: 14.75rem;
+  margin: auto;
+  overflow: hidden;
+  display: block;
+}
+.shopping_view .subjoin ul li {
+  width: 14.75rem;
+  height: 1rem;
+  display: inline-block;
+  margin: 0.75rem 0;
+}
+.shopping_view .subjoin ul li a {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.1rem;
+  display: inline-block;
+  float: left;
+  background-color: #e60012;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.shopping_view .subjoin ul li p {
+  margin-left: 1.15rem;
+  width: 12.6rem;
+  height: 1rem;
+  line-height: 1rem;
+  float: left;
+  font-size: 0.6rem;
+  position: relative;
+  color: #333333;
+}
+.shopping_view .subjoin ul li p span {
+  position: absolute;
+  left: 0;
+}
+.shopping_view .subjoin ul li p i {
+  position: absolute;
+  font-style: normal;
+  right: 0;
+}
+.shopping_view .clearing {
+  width: 16rem;
+}
+.shopping_view .clearing p {
+  margin: auto;
+  width: 14.75rem;
+  line-height: 1.85rem;
+  height: 1.85rem;
+  font-size: 0.6rem;
+  color: #f8f8f9;
+  position: relative;
+}
+.shopping_view .clearing p span {
+  position: absolute;
+  left: 0;
+}
+.shopping_view .clearing p i {
+  position: absolute;
+  font-style: normal;
+  right: 0;
+}
+.shopping_view .clearing .indent_sbm {
+  width: 16rem;
+  padding-top: 0.5rem;
+}
+.shopping_view .clearing .indent_sbm a {
+  width: 7rem;
+  height: 1.9rem;
+  margin-left: 0.65rem;
+  border: 0.05rem solid #cccccc;
+  border-radius: 0.1rem;
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 1.9rem;
+  color: #f8f8f9;
+  letter-spacing: 0.05rem;
+  float: left;
+  text-decoration: none;
+}
+.shopping_view .clearing .indent_sbm .active {
+  background-color: #e60012;
+  color: #FFFFFF;
+  border: 0;
+}
+/*T-05购物车2*/
+.choose {
+  width: 16rem;
+  padding-top: 4.25rem;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  overflow: hidden;
+}
+.choose p {
+  font-size: 0.9rem;
+  color: #333333;
+}
+.choose span {
+  display: block;
+  padding-top: 0.6rem;
+  font-size: 0.6rem;
+  color: #333333;
+}
+.choose a {
+  display: inline-block;
+  width: 8.5rem;
+  height: 1.9rem;
+  line-height: 1.9rem;
+  font-size: 0.6rem;
+  border-radius: 0.1rem;
+  background-color: #e60012;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 2rem auto 0 auto;
+}
+/*T-05购物车3*/
+.payment_view {
+  width: 16rem;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 3.15rem;
+}
+.payment_view p {
+  font-size: 1.2rem;
+  color: #e60012;
+  letter-spacing: 0.1rem;
+  padding-bottom: 1.25rem;
+}
+.payment_view span {
+  font-size: 0.6rem;
+  letter-spacing: 0.05rem;
+  color: #333333;
+  display: block;
+}
+.payment_view .quest_sub {
+  padding-top: 0.65rem;
+  margin-top: 9rem;
+}
+.payment_view .quest_sub a {
+  width: 7rem;
+  height: 1.9rem;
+  margin-left: 0.65rem;
+  border: 0.05rem solid #cccccc;
+  border-radius: 0.1rem;
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 1.9rem;
+  color: #333333;
+  letter-spacing: 0.05rem;
+  float: left;
+  text-decoration: none;
+}
+.payment_view .quest_sub .active {
+  background-color: #e60012;
+  color: #ffffff;
+  border: 0;
+}
+/*T-16支付页面-02*/
+.payment_two {
+  width: 16rem;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  padding-bottom: 3.65rem;
+}
+.payment_two .indent_view {
+  width: 14.75rem;
+  margin: auto;
+  overflow: hidden;
+}
+.payment_two .indent_view .indent_tle {
+  margin-top: 0.5rem;
+  width: 14.75rem;
+  line-height: 2rem;
+  height: 2rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 700;
+  box-sizing: border-box;
+  color: #333333;
+}
+.payment_two .indent_view .indent_rtn {
+  width: 14.75rem;
+  margin: auto;
+  overflow: hidden;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 0.7rem;
+  color: red;
+  text-indent: 0.4rem;
+  letter-spacing: 0.05rem;
+}
+.payment_two .indent_view .indent_info {
+  padding: 0.5rem 0;
+  width: 14.75rem;
+  margin: auto;
+  overflow: hidden;
+  font-size: 0.7rem;
+  color: #333333;
+}
+.payment_two .indent_view .indent_info .name {
+  line-height: 1.4rem;
+  width: 14.75rem;
+}
+.payment_two .indent_view .indent_info .address {
+  line-height: 1.4rem;
+  overflow: hidden;
+  width: 14.75rem;
+}
+.payment_two .indent_view .indent_info .address span {
+  height: auto;
+  float: left;
+  display: inline-block;
+}
+.payment_two .indent_view .indent_info .address i {
+  font-style: normal;
+  width: 11.15rem;
+  height: auto;
+  float: left;
+  display: inline-block;
+  text-align: justify;
+}
+.payment_two .indent_view .indent_info .rental {
+  padding-top: 0.25rem;
+  width: 14.75rem;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+.payment_two .indent_view .indent_info .rental span {
+  height: auto;
+  float: left;
+  display: inline-block;
+}
+.payment_two .indent_view .indent_info .rental i {
+  font-style: normal;
+  height: auto;
+  float: left;
+  display: inline-block;
+  color: red;
+}
+.payment_two .indent_view .indent_info .rental a {
+  font-size: 0.55rem;
+  color: #666666;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  bottom: 0;
+  width: 3rem;
+  padding-right: 0.15rem;
+}
+.payment_two .indent_view .indent_info .rental a i {
+  background: url("../img/m-setup.png") no-repeat;
+  width: 0.25rem;
+  height: 0.5rem;
+  background-size: 100% 100%;
+  transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  float: right;
+  margin-top: 0.15rem;
+}
+.payment_two .indent_list {
+  background-color: #f7f7f9;
+  width: 16rem;
+  overflow: hidden;
+}
+.payment_two .indent_list ul {
+  width: 14.75rem;
+  margin: auto;
+  overflow: hidden;
+  padding-bottom: 0.65rem;
+}
+.payment_two .indent_list ul li {
+  margin: auto;
+  overflow: hidden;
+  padding: 0.65rem 0;
+  width: 14.75rem;
+  display: block;
+  font-size: 0.6rem;
+  border-bottom: 1px #e5e5e5 solid;
+  color: #333333;
+}
+.payment_two .indent_list ul li .num {
+  line-height: 1.4rem;
+  width: 14.75rem;
+}
+.payment_two .indent_list ul li .info {
+  line-height: 1.4rem;
+  overflow: hidden;
+  width: 14.75rem;
+}
+.payment_two .indent_list ul li .info span {
+  height: auto;
+  float: left;
+  display: inline-block;
+}
+.payment_two .indent_list ul li .info i {
+  font-style: normal;
+  width: 11.15rem;
+  height: auto;
+  float: left;
+  display: inline-block;
+}
+.payment_two .indent_list ul li .name {
+  line-height: 1.4rem;
+  overflow: hidden;
+  width: 14.75rem;
+}
+.payment_two .indent_list ul li .name span {
+  height: auto;
+  float: left;
+  display: inline-block;
+}
+.payment_two .indent_list ul li .name i {
+  font-style: normal;
+  width: 11.15rem;
+  height: auto;
+  float: left;
+  display: inline-block;
+}
+.payment_two .indent_list ul li .invoice {
+  line-height: 1.4rem;
+  width: 14.75rem;
+}
+.payment_two .manne {
+  width: 14.75rem;
+  margin: auto;
+  overflow: hidden;
+}
+.payment_two .manne ul {
+  width: 14.75rem;
+  margin: auto;
+  overflow: hidden;
+  display: block;
+}
+.payment_two .manne ul li {
+  display: block;
+  height: 2.5rem;
+  width: 14.75rem;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0.35rem;
+  margin-top: 0.6rem;
+  border: 0.05rem #cccccc solid;
+}
+.payment_two .manne ul li img {
+  display: inline-block;
+  width: 1.75rem;
+  float: left;
+  height: 1.75rem;
+}
+.payment_two .manne ul li p {
+  margin-left: 0.75rem;
+  width: 11rem;
+  height: 1.75rem;
+  overflow: hidden;
+  float: left;
+  display: inline-block;
+}
+.payment_two .manne ul li p span {
+  font-size: 0.6rem;
+  line-height: 0.9rem;
+  display: block;
+  color: #333333;
+}
+.payment_two .manne ul li p i {
+  font-size: 0.5rem;
+  line-height: 0.8rem;
+  display: block;
+  color: #999999;
+  font-style: normal;
+}
+.payment_two .manne ul .active {
+  border: 0.05rem #e60012 solid;
+}
+.payment_two .submit_view {
+  width: 16rem;
+  height: 3rem;
+  background-color: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  -moz-opacity: 0.85;
+  -khtml-opacity: 0.85;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-top: 1px #CCCCCC solid;
+}
+.payment_two .submit_btn {
+  width: 14.75rem;
+  height: 2rem;
+  background-color: red;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 0.6rem;
+  display: block;
+  opacity: 100;
+  filter: alpha(opacity=10);
+  -moz-opacity: 100;
+  -khtml-opacity: 100;
+  margin-bottom: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  margin-left: 0.625rem;
 }

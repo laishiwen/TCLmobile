@@ -13,12 +13,26 @@
 @billtitlecolor:#414141;//订单标题色
 @submitbncolor:#E60011;//提交按钮颜色
 @itemdetalcolor:#666666;//对比详细字体颜色
+@titlecolor:#333333;//产品列表副标题
+@cmwcolor:#999999;//评论颜色
 @redfont:#E81F2F;//红色字体
 @background:#f9f9f9;//头部背景颜色
 @h1font:70/@rem;//h1字体大小
 @black:#000;//黑色
 @rem:40rem;
 @fs:40rem;
+.color_666{
+  color: @itemdetalcolor;
+}
+.color_333{
+	color:@titlecolor;
+}
+.color_999{
+  color:@cmwcolor;
+}
+body{
+  font: 12px "Microsoft Yahei","Hiragino Sans GB",sans-serif;
+}
 @hint-lh:100/@rem;
 *{
 	padding: 0;
@@ -32,6 +46,7 @@ strong, span{
 html,body{
 	width: 100%;
 	height: 100%;
+	position: relative;
 }
 html{
 	font-size: 40px;
@@ -228,6 +243,51 @@ a:hover {
 	border-left: @bor-bott;
 }
 
+.fs16{
+  font-size: 16/@fs;
+}
+.fs18{
+  font-size: 18/@fs;
+}
+.fs20{
+  font-size: 20/@fs;
+}
+.fs22{
+  font-size: 22/@fs;
+}
+.fs24{
+  font-size: 24/@fs;
+}
+.fs26{
+  font-size: 26/@fs;
+}
+.fs28{
+  font-size: 28/@fs;
+}
+.fs30{
+  font-size: 30/@fs;
+}
+
+.fs32{
+  font-size: 32/@fs;
+}
+
+
+.fs34{
+  font-size: 34/@fs;
+}
+.fs36{
+  font-size: 36/@fs;
+}
+.fs42{
+  font-size: 42/@fs;
+}
+.fs48{
+  font-size: 48/@fs;
+}
+.fs60{
+  font-size: 60/@fs;
+}
 .cc{
   display: table;;
   content: "";
@@ -245,4 +305,16 @@ a:hover {
 div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, menu, nav, section {
   margin: 0;
   padding: 0;
+}
+a{
+  text-decoration: none;
+}
+.mg_top28{
+  margin-top: 28/@rem;
+}
+.mrg20{
+  margin: 20/@rem 0;
+}
+.mrg40{
+  margin: 40/@rem 0;
 }

@@ -39,9 +39,9 @@
                 <p class="fs24 color_999">颜色：黑色</p>
                 <p class="fs24 color_333">单价：6666元</p>
                 <div class="cont_sum">
-                    <a href="#" class="fs30 font-wg" onclick="dle()">-</a>
+                    <a href="javascript:void(0)" class="fs30 font-wg" onclick="dle()">-</a>
                     <input id="sum" class="fs24" type="text" value="1" maxlength="5">
-                    <a href="#" class="fs30 font-wg" onclick="inrse()">+</a>
+                    <a href="javascript:void(0)"  class="fs30 font-wg">+</a>
                 </div>
                 <a href="#" class="recycle"></a>
             </dd>
@@ -104,9 +104,9 @@
                 <p class="fs24 color_999">颜色：黑色</p>
                 <p class="fs24 color_333">单价：6666元</p>
                 <div class="cont_sum">
-                    <a href="javascript:void(0)" class="fs30 font-wg" onclick="dles()">-</a>
+                    <a href="javascript:void(0)" class="fs30 font-wg">-</a>
                     <input id="sum1" class="fs24" type="text" value="1" maxlength="5">
-                    <a href="javascript:void(0)" class="fs30 font-wg" onclick="inrses()">+</a>
+                    <a href="javascript:void(0)" class="fs30 font-wg">+</a>
                 </div>
                 <a href="#" class="recycle"></a>
             </dd>
@@ -167,6 +167,7 @@
     </div>
     <!-- Top shopping_view end -->
 
+    <!--
     <script>
         function add() {
             var i=parseInt(document.getElementById("sum").value);
@@ -208,5 +209,32 @@
             document.getElementById("sum1").value = deteles();
         }
     </script>
+    -->
+<script src="js/jquery-1.10.1.min.js"></script>
+<script>
+    $(".shopping_view").each(function(){
+        var $this=$(this);
+        $(".Cart01").mousemove(function(){
+           var index=$(this).index();
+            var i=parseInt($(this).find(".prd_list dd .cont_sum input").val());
+            $(this).find(".prd_list dd .cont_sum a").eq(1).click(function(){
+                $(this).siblings("input").val(i+=1);
+            });
+            $(this).find(".prd_list dd .cont_sum a").eq(0).click(function(){
+                if(i==0){
+                    $(this).siblings("input").val(0);
+                }else{
+                    $(this).siblings("input").val(i-=1);
+                }
+            });
+        });
+        <!-- submit -->
+    });
+    $(document).ready(function(){
+        $(".indent_sbm a").click(function(){
+            $(this).addClass("active").siblings("").removeClass("active");
+        });
+    });
+</script>
 </body>
 </html>

@@ -34,6 +34,13 @@
             <a class="active" href="javascript:void(0)">继续购物</a>
         </div>
     </div>
-
+<script src="js/jquery-1.10.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".quest_sub a").click(function(){
+            $(this).addClass("active").siblings("").removeClass("active");
+        });
+    });
+</script>
 </body>
 </html>

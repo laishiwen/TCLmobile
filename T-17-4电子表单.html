@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
-<title>T-17  服务2</title>
+<title>TCL官方网站</title>
     <link rel="stylesheet" href="less/common.css"/>
     <link rel="stylesheet" href="less/header.css" />
     <link rel="stylesheet" href="less/main.css" />
@@ -12,34 +12,45 @@
     <link rel="stylesheet" href="less/common.css" /> -->
     <link rel="stylesheet" rel="stylesheet/css" type="text/css" href="less/widget/idangerous.swiper.css" />
     <script src="js/init.js"></script>
+    <script src="js/jquery-1.10.1.min.js"></script>
 <title>T-17-4电子表单</title>
 </head>
 
 <body>
-<!-- Top html start -->
-<header class="header bor-bott">
-    <img class="fl logo" src="img/logo.png" />
-    <div class="fr w80">
-        <div class="search">&#xe608</div>
-        <div class="cart">&#xe61f</div>
-        <div class="nav"> &#xe603</div>
-    </div>
-</header>
-<!-- Top html end -->
+    <!-- Top html start -->
+    <header class="header bor-bott">
+        <img class="fl logo" src="img/logo.png" />
+        <div class="fr w80">
+            <div class="search">&#xe608</div>
+            <div class="cart">&#xe61f</div>
+            <div class="nav"> &#xe603</div>
+        </div>
+    </header>
+    <!-- Top html end -->
 
-<div class="atform qc">
-<p class="hint bor-bott qc">常见问题？</p>
-<p class="cont">尊敬的用户，感谢您在线激活电子保单，请填写您的手机号码</p>
-    <div class="iphone bor-bott qc">
-        <span>电话号码：</span>
-        <input type="text" placeholder="请输入您的电话号码" maxlength="13">
+    <!-- Top atform start -->
+    <div class="atform qc">
+    <p class="hint bor-bott qc">常见问题？</p>
+    <p class="cont">尊敬的用户，感谢您在线激活电子保单，请填写您的手机号码</p>
+        <div class="iphone bor-bott qc">
+            <span>电话号码：</span>
+            <input type="text" placeholder="请输入您的电话号码" maxlength="13">
+        </div>
+        <div class="tel_btn qc">
+            <a class="activate active">激活</a>
+            <a class="reset">重置</a>
+        </div>
     </div>
-    <div class="tel_btn qc">
-        <a class="activate">激活</a>
-        <a class="reset">重置</a>
-    </div>
-</div>
-
-
+    <!-- Top atform end -->
+<script>
+$(".atform").each(function(){
+    $(this).find(".tel_btn a").click(function(){
+       $(this).addClass("active").siblings("").removeClass("active");
+    });
+    $(".iphone input").focus(function(){
+       $(this).css("color","#333333");
+    });
+});
+</script>
 </body>
 </html>
